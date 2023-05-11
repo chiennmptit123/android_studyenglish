@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.test.complete.AdviceActivity"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:background="@color/background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lời khuyên dành cho bạn"
+            android:textSize="35dp"
+            android:textColor="@color/login_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtThongBaoDiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm đạt được : 50% (50 points)"
+            android:textColor="#313132"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/txtThongBaoKhoaHocPhuHop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khóa học phù hợp với bạn : Level A1"
+            android:textColor="#313132"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="18dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:id="@+id/txtAnhKhoaHoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/khoa_2"
+                        android:scaleType="fitXY"/>
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5">
+                    <TextView
+                        android:id="@+id/txtTenKhoaHoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level A1"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/txtThoiGianHoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 tuần"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/txtMota"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.5"
+                    android:text="- Nắm đuợc các thì cơ bản trong tiếng anh   \n- Tiếp cận với các đoạn hội thoại ngắn  \n- Làm các đoạn bài đọc đơn giản."
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnVaoKhoaHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vào khóa học"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button_login"
+                android:textColor="@color/white"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:textSize="18dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

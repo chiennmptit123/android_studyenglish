@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Learning English</string>
+    <string name="lay_lai_mat_khau">Bạn quên mất mật khẩu? Nhập địa chỉ Email để lấy lại mật khẩu của bạn thông qua Email.</string>
+    <string name="title_test">Chứng chỉ Vstep là chứng chỉ tiếng anh A2, B1, B2, C1 theo khung năng lực ngoại ngữ 6 bậc dành cho Việt Nam do các trường ủy quyền của Bộ giáo dục và Đào tạo cấp. Chứng chỉ Vstep là chứng chỉ tiếng anh A2, B1, B2, C1 theo khung năng lực ngoại ngữ 6 bậc dành cho Việt Nam do các trường ủy quyền của Bộ giáo dục và Đào tạo cấp.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

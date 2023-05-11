@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imgCapacity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_headphones"/>
+                <TextView
+                    android:id="@+id/txtBuoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Buổi 1 : Listening"
+                    android:textColor="@color/login_text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtPhan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="1.1 Từ Vựng"
+                    android:textColor="@color/login_text"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txtPhanTram1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_star_yellow"
+                    android:drawablePadding="2dp"
+                    android:text="20/20"
+                    android:textColor="@color/login_text"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtPhan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="1.2 Bài tập - Ghi nhớ từ vựng"
+                    android:textColor="@color/login_text"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/txtPhanTram2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20"
+                    android:textStyle="italic"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/login_text"
+                    android:drawableLeft="@drawable/ic_star_yellow"
+                    android:drawablePadding="2dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtPhan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="1.3 Memory Game"
+                    android:textColor="@color/login_text"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/txtPhanTram3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20"
+                    android:textStyle="italic"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/login_text"
+                    android:drawableLeft="@drawable/ic_star_yellow"
+                    android:drawablePadding="2dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

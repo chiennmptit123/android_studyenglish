@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appstudyenglish">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppStudyEnglish"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.complete.CompleteBaiHocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.writting.BaiHocWritingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.speaking.BaiHocSpeakingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.reading.BaiHocReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chi_tiet_buoi_hoc.ChiTietBuoiHocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.complete.AdviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.listening.TestListeningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.speaking.TestSpeakingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.complete.CompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.writting.WrittingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.writting.TestWritingActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.test.speaking.SpeakingActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.test.reading.TestReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.reading.ReadingActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.test.listening.ListeningActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.ChiTietTuanHocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chi_tiet_khoa_hoc.ChiTietKhoaHocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.khoa_hoc_info.KhoaHocInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.quan_tri_vien.main_quan_tri_vien.MainQuanTriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.log_in.lay_lai_mat_khau.CurrentPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.log_in.dang_ky.DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.log_in.dang_nhap.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

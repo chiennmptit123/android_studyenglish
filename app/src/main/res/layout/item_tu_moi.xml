@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:id="@+id/rlBaiHoc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/txtTenBaiHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="Quarter /ˈkwɔː.tər/ "
+                android:textColor="@color/login_text"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/icVolum"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_volum_on"
+                android:layout_toEndOf="@+id/txtTenBaiHoc"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"/>
+
+        </RelativeLayout>
+</layout>

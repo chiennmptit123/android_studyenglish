@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.speaking.BaiHocSpeakingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="3dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@+id/btnBack"
+                android:text="Buổi 4 : Speaking"
+                android:textColor="@color/login_text"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click the record button and read the passage below"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/speaking"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linerGhiAm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imgDone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txtThoiGianGhiAm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnGhiAm"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:text="00:00"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btnGhiAm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_login"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/ic_voice" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNgheLai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_login"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Listen again"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_above="@+id/imgDone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/imgDone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="15dp"
+                android:src="@drawable/ic_baseline_done_24" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

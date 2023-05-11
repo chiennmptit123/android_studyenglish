@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_xacnhan_hoadon"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:background="@drawable/custom_dang_ki_thanhcong"
+        android:text="Thông báo"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="Bạn đã ứng tuyển thành công ! \n Nhà tuyển dụng sẽ liên lạc với \n bạn trong thời gian sớm nhất "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnComfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:background="@color/login_text"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</LinearLayout>

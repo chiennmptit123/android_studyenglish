@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.khoa_hoc_info.chi_tiet_tuan_hoc.complete.CompleteBaiHocActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chúc mừng bạn đã hoàn thành bài học"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:textColor="@color/login_text"
+            android:textStyle="bold"
+            android:layout_above="@id/txtchuy"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/txthoanthanh"/>
+
+        <TextView
+            android:id="@+id/txtchuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="Hãy tiếp tục làm các bài tiếp theo"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnTiepTuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtchuy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_btn_test"
+            android:padding="15dp"
+            android:text="Tiếp tục"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</layout>
